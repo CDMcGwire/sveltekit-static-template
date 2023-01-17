@@ -1,0 +1,42 @@
+@use 'design'
+
+/* Normalization */
+
+*
+	box-sizing: border-box
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+code
+	margin: 0
+	padding: 0
+
+/* Basic Styling */
+
+html
+	font-family: design.$ff-body
+	font-size: design.$fs-phone
+
+	@media (min-width: design.$bp-phablet)
+		font-size: design.$fs-phone
+
+	@media (min-width: design.$bp-tablet)
+		font-size: design.$fs-tablet
+
+	@media (min-width: design.$bp-partial)
+		font-size: design.$fs-partial
+
+	@media (min-width: design.$bp-fullsize)
+		font-size: design.$fs-fullsize
+
+	@media (min-width: design.$bp-oversize)
+		font-size: design.$fs-oversize
